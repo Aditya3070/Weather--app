@@ -14,13 +14,13 @@ function fetchWeather() {
     .then(data => {
       if (data.cod === 200) {
         const resultDiv = document.getElementById("result");
-        resultDiv.innerHTML = `
+        resultDiv.innerHTML = '
           <p><strong>${data.name}, ${data.sys.country}</strong></p>
           <p>Temperature: ${data.main.temp}°C</p>
           <p>Condition: ${data.weather[0].description}</p>
           <p>Humidity: ${data.main.humidity}%</p>
           <p>Wind Speed: ${data.wind.speed} m/s</p>
-        `;
+        ';
       } else {
         alert("City not found");
       }
