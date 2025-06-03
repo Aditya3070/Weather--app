@@ -9,7 +9,7 @@ function fetchWeather() {
   }
 
   // Correct the fetch URL using backticks and the correct variable name (apikey)
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`)
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric')
     .then(response => response.json())
     .then(data => {
       if (data.cod === 200) {
