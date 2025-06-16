@@ -12,7 +12,7 @@ body {
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
-    background: #a89090(73, 153, 51);
+    background: rgb(73, 153, 51);
     box-shadow: 0 4px 8px rgba(0, 0, 0.2);
     border-radius: 8px;
 }
